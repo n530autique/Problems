@@ -7,13 +7,14 @@
 
 class InfoMessage:
     """Информационное сообщение о тренировке."""
-    def __init__(self,
-                training_type: type,
-                duration: float,
-                distance: float,
-                speed: float,
-                calories: float
-                ) -> None:
+    def __init__(
+        self,
+        training_type: type,
+        duration: float,
+        distance: float,
+        speed: float,
+        calories: float
+        ) -> None:
         self.training_type = training_type
         self.duration = "%.3f" % duration
         self.distance = "%.3f" % distance
